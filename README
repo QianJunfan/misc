@@ -1,0 +1,11 @@
+A collection of my small experiments and gadgets.
+
+[DONE]
+	pt_emu - A multi-level page table system emulator
+	snake  - A snake game with small memory compression	
+	2048c  - Just a 2048 game
+
+[DOING]
+	pacman - Just a pacman game
+	donut  - A classic rotating 3D donut
+	cpp    - Learning cpp 
