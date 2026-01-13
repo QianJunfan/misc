@@ -10,32 +10,32 @@
 
 #define CLEAR	"\033[2J\033[H"
 
-#define GET_LINE(r, ln) do {					\
+#define GET_LINE(r, ln) do {				\
 	for (int _c = 0; _c < 4; _c++)			\
 		ln[_c] = get(r, _c);			\
 } while (0)
 
-#define SET_LINE(r, ln) do {					\
+#define SET_LINE(r, ln) do {				\
 	for (int _c = 0; _c < 4; _c++)			\
 		set(r, _c, ln[_c]);			\
 } while (0)
 
-#define GET_LINE_REV(r, ln) do {				\
+#define GET_LINE_REV(r, ln) do {			\
 	for (int _c = 0; _c < 4; _c++)			\
 		ln[REV(_c)] = get(r, _c);		\
 } while (0)
 
-#define SET_LINE_REV(r, ln) do {				\
+#define SET_LINE_REV(r, ln) do {			\
 	for (int _c = 0; _c < 4; _c++)			\
 		set(r, _c, ln[REV(_c)]);		\
 } while (0)
 
-#define GET_COL(c, ln) do {					\
+#define GET_COL(c, ln) do {				\
 	for (int _r = 0; _r < 4; _r++)			\
 		ln[_r] = get(_r, c);			\
 } while (0)
 
-#define SET_COL(c, ln) do {					\
+#define SET_COL(c, ln) do {				\
 	for (int _r = 0; _r < 4; _r++)			\
 		set(_r, c, ln[_r]);			\
 } while (0)

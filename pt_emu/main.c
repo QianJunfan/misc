@@ -1,5 +1,4 @@
 /* A multi-level page table system emulator */
-
 #include <string.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -105,7 +104,7 @@ pte_t *walk(pt_t pt, uint64_t va, int alloc)
 				return NULL;
 
 			*pte = PA2PTE(pt) | PTE_V;
-		}
+	        }
 	}
 
 	return &pt[PX(0, va)];
