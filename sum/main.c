@@ -53,7 +53,7 @@ int main(void)
 {
 	pr_status("[DONE]");
 	pr_status("[DOING]");
-	pr_status("[ABANDON]");
+	pr_status("[ABANDONED]");
 
 	return 0;
 }
