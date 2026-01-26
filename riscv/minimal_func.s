@@ -13,6 +13,11 @@ main:
         
         sw ra, 12(sp)
         
+        # In a standard RISC-V function prologue,
+        # ra is often the first register saved after the stack pointer is adjusted.
+        # Since the stack grows downward, the first item saved occupies the "highest" address
+        # within that specific stack frame.
+
         # ra: return address
 
         # Store Word: sw rs2, offset(rs1)
@@ -44,3 +49,4 @@ main:
 
 
 # save -> exec -> restore
+
