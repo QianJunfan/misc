@@ -8,8 +8,9 @@ sum	- A minimalist project summary utility
 [DOING]
 c	- C studies
 x11	- X11 studies
+riscv	- RISC-V asm studies
 py	- Python studies
-njuos	- NJU OS class studies
+njuos	- NJUOS22 studies
 cpp	- C++ studies
 pac_man	- Just a Pac-Man game
 
